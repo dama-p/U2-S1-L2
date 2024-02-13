@@ -428,12 +428,6 @@ aside div .fa-tag {
   opacity: 0.1;
 }
 
-.topIcons, .bottomIcon {
-  font-size: 2rem;
-  position: absolute;
-  z-index: 11;
-  right: 18px;
-}
 
 .topIcons .far,
 .bottomIcon .far {
@@ -442,7 +436,51 @@ aside div .fa-tag {
   box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
   padding: 16px;
   border: 3px solid white;
+  opacity: 80%;
 }
 
+@media screen and (min-width: 700px) {
+.bottomIcon {
+  font-size: 2rem;
+  position: fixed;
+  z-index: 11;
+  right: 10px;
+  bottom: 0px;
+  line-height: 2.5em;
+}
+
+
+.topIcons {
+  font-size: 2rem;
+  position: fixed;
+  z-index: 11;
+  right: 10px;
+  top: 0px;
+  line-height: 2.5em;
+}
+}
+
+
+@media screen and (max-width: 699px) {
+  
+.bottomIcon  {
+  font-size: 2rem;
+  position: fixed;
+  z-index: 11;
+  right: 10px;
+  bottom: 0px;
+  line-height: 2.5em;
+}
+
+.topIcons {
+  font-size: 2rem;
+  position: fixed;
+  z-index: 11;
+  right: 10px;
+  bottom: 85px;
+  line-height: 2.5em;
+}
+  
+}
 
 
